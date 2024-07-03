@@ -1,3 +1,3 @@
-A simple mimimalistic text editor that can save, open, and read files
+A simple mimimalistic text editor that can save, open, read, and edit files
 
 Happy Coding :)
