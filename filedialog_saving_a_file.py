@@ -68,33 +68,7 @@ def display():
     ]))
     with open(filename , 'r') as f:
         text.insert(INSERT, f.read())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 window = Tk()
 window.title("Create and open a file")
