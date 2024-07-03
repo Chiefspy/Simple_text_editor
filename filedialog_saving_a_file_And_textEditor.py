@@ -9,7 +9,7 @@ def save():
                                     filetypes=[
                                         ("Text file", "*.txt"),
                                         ("Python file","*.py"),
-                                        ("All files", ".*"),
+                                        ("All files", "*.*"),
                                         ("Bash file", "*.sh"),
                                         ("HTML file", "*.html"),
                                         ("CSS file", "*.css"),
@@ -30,7 +30,7 @@ def openFile():
         file_path =str(filedialog.askopenfilename(title="ask open file name" ,initialdir=r"/home",filetypes=[
                                         ("Text file", "*.txt"),
                                         ("Python file","*.py"),
-                                        ("All files", ".*"),
+                                        ("All files", "*.*"),
                                         ("Bash file", "*.sh"),
                                         ("HTML file", "*.html"),
                                         ("CSS file", "*.css"),
