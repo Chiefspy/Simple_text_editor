@@ -52,7 +52,7 @@ def closeFile():
 
 window = Tk()
 
-window.title("Cool Text Editor")
+window.title("Simple Text Editor")
 
 filetypes = [("All files", "*.*"),
              ("Python file", "*.py"),
