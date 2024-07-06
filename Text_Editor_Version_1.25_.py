@@ -11,7 +11,7 @@ def copy(text):
 
 def delete(text):
     if messagebox.askyesno(title="askyesno",
-                           message="Are you sure you want to delete all text inside the text area? All unsaved progress will be lost"):
+                           message="Are you sure you want to delete all text inside the text area? All unsaved progress will be lost."):
         text.delete(1.0, END)
     else:
         return
