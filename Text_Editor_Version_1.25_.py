@@ -51,7 +51,7 @@ def closeFile(window):
 
 def create_window(window):
     new_window = Toplevel(window)
-    #Feature not complete 
+    # Feature not complete 
 
 def main():
     window = Tk()
