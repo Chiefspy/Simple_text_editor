@@ -86,6 +86,8 @@ def main():
     copyImage = PhotoImage(file="Copy.png")
     pasteImage = PhotoImage(file="paste.png")
 
+    create_WindowImage = PhotoImage(file="Open new tab icon.png")
+
 
     menuBar = Menu(window, )
     window.config(menu=menuBar)
@@ -112,7 +114,7 @@ def main():
     optionsMenu = Menu(menuBar, tearoff=0)
     menuBar.add_cascade(menu=optionsMenu, label="options")
 
-    optionsMenu.add_command(label="Create new window", command=lambda: create_window(window))
+    optionsMenu.add_command(label="Create new window", command=lambda: create_window(window), compound=LEFT, image=create_WindowImage)
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
     text.pack(expand=True, fill="both")
