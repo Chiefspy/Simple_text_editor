@@ -86,7 +86,7 @@ def main():
     copyImage = PhotoImage(file="Copy.png")
     pasteImage = PhotoImage(file="paste.png")
 
-    create_WindowImage = PhotoImage(file="Open new tab icon.png")
+    create_WindowImage = PhotoImage(file="new_tab_icon.png")
 
 
     menuBar = Menu(window, )
