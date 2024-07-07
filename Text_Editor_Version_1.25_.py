@@ -103,7 +103,7 @@ def main():
     optionsMenu.add_command(label="Create new window", command=lambda: create_window(window))
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
-    text.pack()
+    text.pack(expand=True, fill="both")
 
 
     window.mainloop()
