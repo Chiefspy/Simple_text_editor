@@ -103,7 +103,7 @@ def main():
     menuBar.add_cascade(menu=editMenu, label="edit")
 
     editMenu.add_command(label="Copy", command=lambda: copy(text), compound=LEFT, image=copyImage)
-    editMenu.add_command(label="Paste", command=lambda: paste(copy(), text), compound=LEFT, image=pasteImage)
+    editMenu.add_command(label="Paste", command=lambda: paste(copy(text), text), compound=LEFT, image=pasteImage)
 
     editMenu.add_separator()
 
