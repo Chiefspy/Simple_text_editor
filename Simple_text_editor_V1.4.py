@@ -62,7 +62,8 @@ def create_window(window):
     Label(tab1, text="Hello", width=50, height=25).pack()
     Label(tab2, text="Goodbye", width=50, height=25).pack()
 
-    #Feature not complete 
+    # Feature not complete 
+    # Currently the create_window function is more of a skeletal structure for future interative updates
 
 def main():
     window = Tk()
