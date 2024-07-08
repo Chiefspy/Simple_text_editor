@@ -81,15 +81,15 @@ def main():
 
 
 
-    saveImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/FlopyDisk.png")
-    openImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Folder.png")
-    exitImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Stop.png")
+    saveImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/FlopyDisk.png")
+    openImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Folder.png")
+    exitImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Stop.png")
 
-    deleteImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Delete.png")
-    copyImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Copy.png")
-    pasteImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/paste.png")
+    deleteImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Delete.png")
+    copyImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Copy.png")
+    pasteImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/paste.png")
 
-    create_WindowImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/new_tab_icon.png")
+    create_WindowImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/new_tab_icon.png")
 
 
     menuBar = Menu(window, )
