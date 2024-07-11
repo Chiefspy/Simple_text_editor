@@ -42,6 +42,8 @@ def openFile(types, text, home_dir):
             text.insert(INSERT, f.read())
     except FileNotFoundError as e:
         messagebox.showerror(title="show error", message=f"{e}")
+    except UnicodeDecodeError as j:
+        messagebox.showerror(title="show error", message=f"{j}")
 
 
 def closeFile(window):
