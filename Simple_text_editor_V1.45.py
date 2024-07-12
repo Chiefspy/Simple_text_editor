@@ -46,7 +46,7 @@ def openFile(types, text, home_dir):
         messagebox.showerror(title="show error", message=f"{j}")
 
 
-def closeFile(window):
+def closeFile(window, event):
     if messagebox.askyesno(title="ask yes no",
                            message="Are you sure you want to exit? All unsaved progress will be lost."):
         window.destroy()
