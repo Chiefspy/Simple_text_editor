@@ -73,6 +73,8 @@ def main():
 
     home_dir = os.path.expanduser('~')
 
+    window.bind("<q>", closeFile)
+
 
     filetypes = [("All files", "*.*"),
              ("Python file", "*.py"),
