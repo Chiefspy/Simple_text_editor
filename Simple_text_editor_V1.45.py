@@ -73,7 +73,7 @@ def main():
 
     home_dir = os.path.expanduser('~')
 
-    window.bind("<q>", lambda event: closeFile(window))
+    window.bind("<Button-3>", lambda event: closeFile(window))
 
 
     filetypes = [("All files", "*.*"),
