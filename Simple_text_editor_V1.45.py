@@ -61,11 +61,31 @@ def create_window(window):
     notebook.add(tab1, text="tab1")
     notebook.add(tab2, text="tab2")
     notebook.pack()
-    Label(tab1, text="Hello", width=50, height=25).pack()
-    Label(tab2, text="Goodbye", width=50, height=25).pack()
+    
+    label1 = Label(tab1, text="Hello", bg="red", width=50, height=25)
+    label1.pack()
+    label1.bind("<Button-1>", kys)
+    label1.bind("<B1-Motion>", help)
+
+    
+    label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25)
+    label2.pack()
+    label2.bind("<Button-1>", kys)
+    label2.bind("<B1-Motion>", help)
 
     #Feature not complete 
 
+def kys(event):
+    widget = event.widget
+    widget.startX = event.x
+    widget.startY = event.y
+
+def help(event):
+    widget = event.widget
+    x = widget.winfo_X() - widget.startX + event.x
+    y = widget.winfo_Y() - widget.startY + event.y
+    widget.place(x=x, y=y)
+    
 def main():
     window = Tk()
 
