@@ -82,8 +82,8 @@ def kys(event):
 
 def help(event):
     widget = event.widget
-    x = widget.winfo_X() - widget.startX + event.x
-    y = widget.winfo_Y() - widget.startY + event.y
+    x = widget.winfo_x() - widget.startX + event.x
+    y = widget.winfo_y() - widget.startY + event.y
     widget.place(x=x, y=y)
     
 def main():
