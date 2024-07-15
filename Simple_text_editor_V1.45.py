@@ -78,16 +78,16 @@ def create_window(window):
     
     label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25)
     label2.pack()
-    label2.bind("<Button-1>", kys)
-    label2.bind("<B1-Motion>", help)
-    label2.bind("<w>", move_up)
-    label2.bind("<a>", move_left)
-    label2.bind("<s>", move_down)
-    label2.bind("<d>", move_right)
-    label2.bind("<Up>", move_up)
-    label2.bind("<Down>", move_down)
-    label2.bind("<Left>", move_left)
-    label2.bind("<Right>", move_right)
+    new_window.bind("<Button-1>", kys)
+    new_window.bind("<B1-Motion>", help)
+    new_window.bind("<w>", move_up)
+    new_window.bind("<a>", move_left)
+    new_window.bind("<s>", move_down)
+    new_window.bind("<d>", move_right)
+    new_window.bind("<Up>", move_up)
+    new_window.bind("<Down>", move_down)
+    new_window.bind("<Left>", move_left)
+    new_window.bind("<Right>", move_right)
     
     #Feature not complete 
 def move_up(event):
