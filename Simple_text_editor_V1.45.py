@@ -72,7 +72,7 @@ def create_window(window):
     label2.pack()
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
-    new_window.bind("<w>", lambda event: move_up(event, label2))
+    new_window.bind("<w>", move_up)
     new_window.bind("<a>", move_left)
     new_window.bind("<s>", move_down)
     new_window.bind("<d>", move_right)
