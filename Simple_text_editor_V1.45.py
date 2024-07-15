@@ -66,14 +66,45 @@ def create_window(window):
     label1.pack()
     label1.bind("<Button-1>", kys)
     label1.bind("<B1-Motion>", help)
+    label1.bind("<w>", move_up)
+    label1.bind("<a>", move_left)
+    label1.bind("<s>", move_down)
+    label1.bind("<d>", move_right)
+    label1.bind("<Up>", move_up)
+    label1.bind("<Down>", move_down)
+    label1.bind("<Left>", move_left)
+    label1.bind("<Right>", move_right)
 
     
     label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25)
     label2.pack()
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
-
+    label2.bind("<w>", move_up)
+    label2.bind("<a>", move_left)
+    label2.bind("<s>", move_down)
+    label2.bind("<d>", move_right)
+    label2.bind("<Up>", move_up)
+    label2.bind("<Down>", move_down)
+    label2.bind("<Left>", move_left)
+    label2.bind("<Right>", move_right)
+    
     #Feature not complete 
+def move_up(event):
+    widget = event.widget
+    widget.place(x=widget.winfo_x() , y=widget.winfo_y() - 10)
+
+def move_down(event):
+    widget = event.widget
+    widget.place(x=widget.winfo_x() , y=widget.winfo_y() + 10)
+
+def move_left(event):
+    widget = event.widget
+    widget.place(x=widget.winfo_x() - 10 , y=widget.winfo_y())
+    
+def move_right(event):
+    widget = event.widget
+    widget.place(x=widget.winfo_x() + 10 , y=widget.winfo_y())
 
 def kys(event):
     widget = event.widget
