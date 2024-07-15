@@ -83,7 +83,8 @@ def create_window(window):
     new_window.bind("<Right>", move_right)
     
     #Feature not complete 
-def move_up(event, widget):
+def move_up(event):
+    widget = event.widget
     widget.place(x=widget.winfo_x() , y=widget.winfo_y() - 10)
 
 def move_down(event):
