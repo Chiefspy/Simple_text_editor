@@ -124,7 +124,8 @@ def main():
              ("Text file", "*.txt"),
              ("HTML file", "*.html"),
              ("Javascript file", "*.js"),
-             ("C file", "*.c")]
+             ("C file", "*.c"),
+                 ("CSS file", "*.css")]
 
 
 
