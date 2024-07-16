@@ -60,7 +60,7 @@ def create_window(window):
     tab2 = Frame(notebook,)
     notebook.add(tab1, text="tab1")
     notebook.add(tab2, text="tab2")
-    notebook.pack()
+    notebook.pack(expand=True, fill="both")
     
     label1 = Label(tab1, text="Hello", bg="red", width=50, height=25)
     label1.pack(expand=True, fill="both")
