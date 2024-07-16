@@ -63,13 +63,13 @@ def create_window(window):
     notebook.pack()
     
     label1 = Label(tab1, text="Hello", bg="red", width=50, height=25)
-    label1.pack()
+    label1.pack(expand=True, fill="both")
     label1.bind("<Button-1>", kys)
     label1.bind("<B1-Motion>", help)
 
     
     label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25)
-    label2.pack()
+    label2.pack(expand=True, fill="both")
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
     new_window.bind("<w>", move_up)
