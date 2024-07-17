@@ -55,7 +55,7 @@ def closeFile(window, event=None):
         return
 
 def create_window(window):
-    HEIGHT = 700
+    HEIGHT = 600
     WIDTH = 700
     xVelocity = 3
     yVelocity = 2
