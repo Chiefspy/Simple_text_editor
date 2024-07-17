@@ -67,12 +67,18 @@ def create_window(window):
     label1.pack()
     label1.bind("<Button-1>", kys)
     label1.bind("<B1-Motion>", help)
+    label1_height = label1.height()
+    label1_width = label1.width()
 
     
     label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25)
     label2.pack()
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
+    label2_height = label2.height()
+    label2_height = label2.width()
+
+
 """
     new_window.bind("<w>", move_up)
     new_window.bind("<a>", move_left)
