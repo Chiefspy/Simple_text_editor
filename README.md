@@ -15,6 +15,10 @@ Program now supports relative and absolute filepaths.
 ```bash
 cd Simple_text_editor
 ```
+#### Absolute file path 
+```bash
+cd ~\Simple_text_editor
+```
 
 ### Runs Program
 ```bash
