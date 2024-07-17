@@ -81,6 +81,16 @@ def create_window(window):
     label2.bind("<B1-Motion>", help)
     label2_height = label2.height()
     label2_height = label2.width()
+    while True:
+        coordinates = tab1.coords(label1)
+        if coordinates[0] >= WIDTH - label1_height or coordinates[0] < 0:
+            xVelocity = -xVelocity
+        if coordinates[1] >= HEIGHT - label1_width or coordinates[1] < 0:
+            yVelocity = -yVelocity
+        tab1.move(labe1, xVelocity, yVelocity)
+        new_window.update()
+
+
 
 
 """
