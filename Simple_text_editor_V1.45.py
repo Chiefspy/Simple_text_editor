@@ -71,21 +71,17 @@ def create_window(window):
     label1.pack()
     label1.bind("<Button-1>", kys)
     label1.bind("<B1-Motion>", help)
-    label1_height = label1.height()
-    label1_width = label1.width()
 
     
     label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25)
     label2.pack()
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
-    label2_height = label2.height()
-    label2_height = label2.width()
     while True:
         coordinates = tab1.coords(label1)
-        if coordinates[0] >= WIDTH - label1_height or coordinates[0] < 0:
+        if coordinates[0] >= WIDTH - 50 or coordinates[0] < 0:
             xVelocity = -xVelocity
-        if coordinates[1] >= HEIGHT - label1_width or coordinates[1] < 0:
+        if coordinates[1] >= HEIGHT - 25 or coordinates[1] < 0:
             yVelocity = -yVelocity
         tab1.move(labe1, xVelocity, yVelocity)
         new_window.update()
