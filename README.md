@@ -7,9 +7,11 @@ If you find any bugs or better ways to implement part(s) of the project don't he
 **Notice**
 Program now supports relative and absolute filepaths.
 
+## Terminal Commands
+
 ### Change directories
 
-## Relative file path
+#### Relative file path
 ```bash
 cd Simple_text_editor
 ```
