@@ -12,6 +12,11 @@ Program now supports relative and absolute filepaths.
 
 ## Terminal Commands
 
+### Clone the repo
+```bash
+git clone https://github.com/Chiefspy/Simple_text_editor.git
+```
+
 ### Change directories
 
 #### Relative file path
