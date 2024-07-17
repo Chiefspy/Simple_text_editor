@@ -60,7 +60,7 @@ def create_window(window):
     xVelocity = 3
     yVelocity = 2
     new_window = Toplevel(window)
-    new_window.geometry("500x500")
+    new_window.geometry("1000x1000")
     #testing the above function
     notebook = ttk.Notebook(new_window,)
     tab1 = Frame(notebook,)
