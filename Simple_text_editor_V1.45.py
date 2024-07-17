@@ -84,7 +84,7 @@ def create_window(window):
             xVelocity = -xVelocity
         if  y_coordinates >= HEIGHT - 25 or y_coordinates < 0:
             yVelocity = -yVelocity
-        label1.place(x = xVelocity,   y = yVelocity)
+        label1.place(x=x_coordinates + xVelocity, y=y_coordinates + yVelocity)
         new_window.update()
         time.sleep(0.01)
 
