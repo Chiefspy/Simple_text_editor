@@ -84,7 +84,7 @@ def create_window(window):
             xVelocity = -xVelocity
         if  y_coordinates >= HEIGHT - 25 or y_coordinates < 0:
             yVelocity = -yVelocity
-        tab1.move(labe1, xVelocity, yVelocity)
+        label1.place(x = xVelocity,   y = yVelocity)
         new_window.update()
         time.sleep(0.01)
 
