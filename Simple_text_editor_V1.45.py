@@ -55,6 +55,10 @@ def closeFile(window, event=None):
         return
 
 def create_window(window):
+    HEIGHT = 500
+    WIDTH = 500
+    xVelocity = 1
+    yVelocity = 1
     new_window = Toplevel(window)
     notebook = ttk.Notebook(new_window,)
     tab1 = Frame(notebook,)
