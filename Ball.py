@@ -6,4 +6,5 @@ class Ball:
     self.yVelocity = yVelocity
   def move(self):
     coordinates = self.canvas.coords(self.image)
+    print(coordinates)
     
