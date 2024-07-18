@@ -87,12 +87,6 @@ def create_window(window):
     basket_ball = Ball(canvas, 0, 0, 50 , 2, 2, "orange")
     tennis_ball = Ball(canvas, 0, 0, 25 , 3, 3, "green")
     
-    while True:
-        soccer_ball.move()
-        basket_ball.move()
-        tennis_ball.move()
-        new_window.update()
-        time.sleep(0.01)
     
     while True:
         x_coordinates = label1.winfo_x()
@@ -102,6 +96,9 @@ def create_window(window):
         if  y_coordinates >= HEIGHT - 25 or y_coordinates < 0:
             yVelocity = -yVelocity
         label1.place(x=x_coordinates + xVelocity, y=y_coordinates + yVelocity)
+        soccer_ball.move()
+        basket_ball.move()
+        tennis_ball.move()
         new_window.update()
         time.sleep(0.01)
 
