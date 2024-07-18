@@ -81,8 +81,11 @@ def create_window(window):
     label2.bind("<B1-Motion>", help)
     canvas = Canvas(tab2, width=WIDTH, height=HEIGHT)
     canvas.pack()
-    
 
+    soccer_ball = ball()
+    basket_ball = ball()
+    tennis_ball = move()
+    
     while True:
         soccer_ball = move()
         basket_ball = move()
