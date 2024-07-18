@@ -5,7 +5,7 @@ Happy Coding :)
 If you find any bugs or better ways to implement part(s) of the project don't hesistate to reach out.
 
 *Warning*
-Make sure you have python installed and  your system and supports the imported libraries
+Make sure you have python installed on your system and supports the imported libraries
 
 **Notice**
 Program now supports relative and absolute filepaths.
