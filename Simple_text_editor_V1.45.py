@@ -83,9 +83,9 @@ def create_window(window):
     canvas = Canvas(tab2, width=WIDTH, height=HEIGHT)
     canvas.pack()
 
-    soccer_ball = Ball()
-    basket_ball = Ball()
-    tennis_ball = Ball()
+    soccer_ball = Ball(canvas,)
+    basket_ball = Ball(canvas,)
+    tennis_ball = Ball(canvas,)
     
     while True:
         soccer_ball = move()
