@@ -79,6 +79,17 @@ def create_window(window):
     label2.pack()
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
+    canvas = Canvas(tab2, width=WIDTH, height=HEIGHT)
+    canvas.pack()
+    
+
+    while True:
+        soccer_ball = move()
+        basket_ball = move()
+        tennis_ball = move()
+        new_window.update()
+        time.sleep(0.01)
+    
     while True:
         x_coordinates = label1.winfo_x()
         y_coordinates = label1.winfo_y()
