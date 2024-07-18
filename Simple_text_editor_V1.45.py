@@ -70,7 +70,7 @@ def create_window(window):
     notebook.add(tab2, text="tab2")
     notebook.pack(expand=True, fill="both")
     
-    label1 = Label(tab1, text="Hello", bg="red", width=50, height=25)
+    label1 = Label(tab1, text="Hello", bg="red", width=50, height=25, fg="white")
     label1.pack()
     label1.bind("<Button-1>", kys)
     label1.bind("<B1-Motion>", help)
