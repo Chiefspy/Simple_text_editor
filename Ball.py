@@ -5,5 +5,5 @@ class Ball:
     self.xVelocity = xVelocity
     self.yVelocity = yVelocity
   def move(self):
-    pass
+    coordinates = self.canvas.coords(self.image)
     
