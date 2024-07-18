@@ -4,6 +4,7 @@ from tkinter import messagebox
 from tkinter import ttk
 import os
 import time
+from Ball import *
 
 
 def copy(text):
@@ -82,9 +83,9 @@ def create_window(window):
     canvas = Canvas(tab2, width=WIDTH, height=HEIGHT)
     canvas.pack()
 
-    soccer_ball = ball()
-    basket_ball = ball()
-    tennis_ball = ball()
+    soccer_ball = Ball()
+    basket_ball = Ball()
+    tennis_ball = Ball()
     
     while True:
         soccer_ball = move()
