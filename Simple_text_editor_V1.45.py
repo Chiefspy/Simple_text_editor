@@ -88,9 +88,9 @@ def create_window(window):
     tennis_ball = Ball(canvas, 0, 0, 25 , 3, 3, "green")
     
     while True:
-        soccer_ball = Ball.move()
-        basket_ball = Ball.move()
-        tennis_ball = Ball.move()
+        soccer_ball.move()
+        basket_ball.move()
+        tennis_ball.move()
         new_window.update()
         time.sleep(0.01)
     
