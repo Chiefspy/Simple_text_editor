@@ -77,6 +77,7 @@ def create_window(window):
 
     
     label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25, fg="white")
+    label2.place(x=0, y=0)
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
     canvas = Canvas(tab2, width=WIDTH, height=HEIGHT)
@@ -85,7 +86,6 @@ def create_window(window):
     soccer_ball = Ball(canvas, 0, 0, 100, 1, 1 , "white")
     basket_ball = Ball(canvas, 0, 0, 50 , 2, 2, "orange")
     tennis_ball = Ball(canvas, 0, 0, 25 , 3, 3, "green")
-    label2.place(x=0, y=0)
     
     
     while True:
