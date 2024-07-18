@@ -62,7 +62,6 @@ def create_window(window):
     yVelocity = 2
     new_window = Toplevel(window)
     new_window.geometry("1000x1000")
-    #testing the above function
     notebook = ttk.Notebook(new_window,)
     tab1 = Frame(notebook,)
     tab2 = Frame(notebook,)
@@ -76,12 +75,12 @@ def create_window(window):
     label1.bind("<B1-Motion>", help)
 
     
+    canvas = Canvas(tab2, width=WIDTH, height=HEIGHT)
+    canvas.pack()
     label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25, fg="white")
     label2.place(x=0, y=0)
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
-    canvas = Canvas(tab2, width=WIDTH, height=HEIGHT)
-    canvas.pack()
 
     soccer_ball = Ball(canvas, 0, 0, 100, 1, 1 , "white")
     basket_ball = Ball(canvas, 0, 0, 50 , 2, 2, "orange")
