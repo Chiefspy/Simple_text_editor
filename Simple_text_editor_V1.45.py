@@ -84,7 +84,7 @@ def create_window(window):
 
     soccer_ball = ball()
     basket_ball = ball()
-    tennis_ball = move()
+    tennis_ball = ball()
     
     while True:
         soccer_ball = move()
