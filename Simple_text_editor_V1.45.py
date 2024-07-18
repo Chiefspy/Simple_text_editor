@@ -77,7 +77,7 @@ def create_window(window):
 
     
     label2 = Label(tab2, text="Goodbye", bg="blue", width=50, height=25, fg="white")
-    label2.pack()
+    label2.place(x=0, y=0)
     label2.bind("<Button-1>", kys)
     label2.bind("<B1-Motion>", help)
     canvas = Canvas(tab2, width=WIDTH, height=HEIGHT)
