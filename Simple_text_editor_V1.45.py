@@ -79,7 +79,7 @@ def update(time_window, time_label, day_label, date_label):
     time_string = strftime("%I:%M:%S %p")
     time_label.config(text=time_string) 
 
-    day_string = strftime("%m")
+    day_string = strftime("%A)
     day_label.config(text=day_string) 
 
     date_string = strftime("%B %d, %Y")
