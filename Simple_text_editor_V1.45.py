@@ -66,7 +66,7 @@ def update(time_window, time_label):
     
 
 def create_time_window(window):
-    time_window = Toplevel(window)
+    time_window = Tk()
 
     time_label = Label(window, font=("Arial", 50), fg="#00FF00", bg="black")
     time_label.pack()
