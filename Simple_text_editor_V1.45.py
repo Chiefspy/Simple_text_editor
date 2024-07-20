@@ -62,6 +62,7 @@ def closeFile(window, event=None):
 
 def create_time_window():
     time_window = Tk()
+    time_window.title("Clock")
 
     time_label = Label(time_window, font=("Arial", 50), fg="#00FF00", bg="black")
     time_label.pack()
