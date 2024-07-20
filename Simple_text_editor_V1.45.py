@@ -204,6 +204,7 @@ def main():
     pasteImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/paste.png")
 
     create_WindowImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/new_tab_icon.png")
+    clockImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Clock.png")
 
 
     menuBar = Menu(window, )
@@ -233,7 +234,7 @@ def main():
 
     optionsMenu.add_command(label="Create new window", command=lambda: create_window(window), compound=LEFT, image=create_WindowImage)
     
-    optionsMenu.add_command(label="View the current time", command=create_time_window, compound=LEFT, image=create_WindowImage)
+    optionsMenu.add_command(label="View the current time", command=create_time_window, compound=LEFT, image=clockImage)
     
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
