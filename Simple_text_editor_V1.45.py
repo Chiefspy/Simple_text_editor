@@ -71,14 +71,21 @@ def create_time_window():
 
     date_label = Label(time_window, font=("Ink Free", 30))
     date_label.pack()
-    update(time_window, time_label)
+    update(time_window, time_label, day_label, date_label)
 
 
-def update(time_window, time_label):
+def update(time_window, time_label, day_label, date_label):
     time_string = strftime("%I:%M:%S %p")
     time_label.config(text=time_string) 
 
-    time_window.after(1000, update, time_window, time_label)
+    day_string = strftime("%d")
+    day_label.config(text=day_string) 
+
+    date_string = strftime("%B %d, %Y")
+    date_label.config(text=date_string) 
+
+    
+    time_window.after(1000, update, time_window, time_label, day_label, date_label)
 
 
 
