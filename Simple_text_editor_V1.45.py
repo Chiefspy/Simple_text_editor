@@ -78,7 +78,7 @@ def update(time_window, time_label):
     time_string = strftime("%I:%M:%S %p")
     time_label.config(text=time_string) 
 
-    time_window.after(1000, update)
+    time_window.after(1000, update, time_window, time_label)
 
 
 
