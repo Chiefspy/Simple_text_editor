@@ -56,16 +56,11 @@ def closeFile(window, event=None):
     else:
         return
 
-def update(time_window, time_label):
-    time_string = strftime("%I:%M:%S %p")
-    time_label.config(text=time_string) 
-
-    time_window.after(1000, update)
 
     
     
 
-def create_time_window(window):
+def create_time_window():
     time_window = Tk()
 
     time_label = Label(window, font=("Arial", 50), fg="#00FF00", bg="black")
@@ -79,6 +74,14 @@ def create_time_window(window):
 
 
     update(time_window, time_label)
+
+
+def update(time_window, time_label):
+    time_string = strftime("%I:%M:%S %p")
+    time_label.config(text=time_string) 
+
+    time_window.after(1000, update)
+
 
 
 
@@ -230,7 +233,7 @@ def main():
 
     optionsMenu.add_command(label="Create new window", command=lambda: create_window(window), compound=LEFT, image=create_WindowImage)
     
-    optionsMenu.add_command(label="View the current time", command=lambda: create_time_window(window), compound=LEFT, image=create_WindowImage)
+    optionsMenu.add_command(label="View the current time", command=create_time_window, compound=LEFT, image=create_WindowImage)
     
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
