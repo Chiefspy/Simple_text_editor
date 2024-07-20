@@ -56,6 +56,32 @@ def closeFile(window, event=None):
     else:
         return
 
+def update(window, time_label):
+    time_string = strftime("%I:%M:%S %p")
+    time_label.config(text=time_string) 
+
+    window.after(1000, update)
+
+    
+    
+
+def create_time_window(window):
+    time_window = Toplevel(window)
+
+    time_label = Label(window, font("Arial", 50), fg="#00FF00", bg="black")
+    time_label.pack()
+
+    day_label = Label(window, font("Ink Free", 25))
+    day_label.pack()
+
+    date_label = Label(window, font("Ink Free", 30))
+    date_label.pack()
+
+
+    update(time_window, time_label)
+
+
+
 def create_window(window):
     HEIGHT = 500
     WIDTH = 700
@@ -203,6 +229,9 @@ def main():
     menuBar.add_cascade(menu=optionsMenu, label="options")
 
     optionsMenu.add_command(label="Create new window", command=lambda: create_window(window), compound=LEFT, image=create_WindowImage)
+    
+    optionsMenu.add_command(label="View the current time", command=lambda: create_time_window(window), compound=LEFT, image=create_WindowImage)
+    
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
     text.pack(expand=True, fill="both")
