@@ -5,6 +5,7 @@ from tkinter import ttk
 import os
 import time
 from Ball import *
+from time import *
 
 
 def copy(text):
