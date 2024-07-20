@@ -56,11 +56,11 @@ def closeFile(window, event=None):
     else:
         return
 
-def update(window, time_label):
+def update(time_window, time_label):
     time_string = strftime("%I:%M:%S %p")
     time_label.config(text=time_string) 
 
-    window.after(1000, update)
+    time_window.after(1000, update)
 
     
     
