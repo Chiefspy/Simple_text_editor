@@ -63,13 +63,13 @@ def closeFile(window, event=None):
 def create_time_window():
     time_window = Tk()
 
-    time_label = Label(window, font=("Arial", 50), fg="#00FF00", bg="black")
+    time_label = Label(time_window, font=("Arial", 50), fg="#00FF00", bg="black")
     time_label.pack()
 
-    day_label = Label(window, font=("Ink Free", 25))
+    day_label = Label(time_window, font=("Ink Free", 25))
     day_label.pack()
 
-    date_label = Label(window, font=("Ink Free", 30))
+    date_label = Label(time_window, font=("Ink Free", 30))
     date_label.pack()
 
 
