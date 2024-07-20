@@ -71,8 +71,6 @@ def create_time_window():
 
     date_label = Label(time_window, font=("Ink Free", 30))
     date_label.pack()
-
-
     update(time_window, time_label)
 
 
