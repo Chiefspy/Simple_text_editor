@@ -9,6 +9,7 @@ Make sure you have python installed on your system and supports the imported lib
 
 **Notice**
 Program now supports relative and absolute filepaths.
+Program now supports a live clock
 
 ## Terminal Commands
 
