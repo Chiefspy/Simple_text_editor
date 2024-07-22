@@ -267,7 +267,7 @@ def main():
     
     optionsMenu.add_command(label="View the current time", command=create_time_window, compound=LEFT, image=clockImage)
 
-    optionsMenu.add_command(label="Send an email", command=enter_email_info, compound=LEFT, image=)
+    optionsMenu.add_command(label="Send an email", command=enter_email_info, compound=LEFT, image=sendMailImage)
     
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
