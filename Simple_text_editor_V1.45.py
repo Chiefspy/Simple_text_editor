@@ -68,7 +68,7 @@ def enter_email_info():
     sender_label = Label(entry_window, text="Sender:")
     sender_label.grid(row=1, column=0)
     sender = Entry(entry_window, )
-    sender.pack()
+    sender.grid(row=1, column=1)
     receiver = Entry(entry_window, )
     receiver.pack()
     password = Entry(entry_window, )
