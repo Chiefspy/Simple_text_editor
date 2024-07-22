@@ -60,7 +60,25 @@ def closeFile(window, event=None):
 
 
     
+def send_mail(sender, receiver, password, subject, body):
+    message = f"""From:{sender}
+    To: {receiver}
+    Subject: {subject}\n
+    {body}
+    """
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.starttls()
+    try:
+        server.login(sender, password)
+        server.sendmail(sender, receiver, message)
+
+    except smtplib.SMTPAuthenticationError:
+        messagebox.showerror(title="show error", message="Unable to login")
+
+
     
+
+
 
 def create_time_window():
     time_window = Tk()
