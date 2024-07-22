@@ -62,9 +62,11 @@ def closeFile(window, event=None):
 def enter_email_info():
     entry_window = Tk()
     entry_window.title("Send Email")
-    
+
+    title_label = Label(entry_window, text="Enter your info")
+    title_label.grid(row=0, column=0, columnspan=2)
     sender = Entry(entry_window, )
-    sender.pack()
+    sender.pack(side=Left)
     receiver = Entry(entry_window, )
     receiver.pack()
     password = Entry(entry_window, )
