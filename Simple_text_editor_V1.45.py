@@ -62,6 +62,21 @@ def closeFile(window, event=None):
 def enter_email_info():
     entry_window = Tk()
     entry_window.title("Send Email")
+    
+    sender = Entry(entry_window, )
+    sender.pack()
+    receiver = Entry(entry_window, )
+    receiver.pack()
+    password = Entry(entry_window, )
+    password.pack()
+    subject = Entry(entry_window,)
+    subject.pack()
+    body = Entry(entry_window, )
+    body.pack()
+
+
+
+
 
     
 def send_mail(sender, receiver, password, subject, body):
@@ -279,6 +294,20 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
