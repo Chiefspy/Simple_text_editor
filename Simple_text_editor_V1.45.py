@@ -65,7 +65,6 @@ def enter_email_info():
 
     email_notebook = ttk.Notebook(entry_window,)
 
-    email_notebook.pack(expand=True, fill="both")
 
     title_label = Label(email_notebook, text="Enter your info")
     title_label.grid(row=0, column=0, columnspan=2)
@@ -91,6 +90,7 @@ def enter_email_info():
     body.grid(row=5, column=1)
     submitButton = Button(email_notebook, text="send mail", command=gather_email_info)
     submitButton.grid(row=6, column=0, columnspan=2)
+    email_notebook.pack(expand=True, fill="both")
 
 
 
