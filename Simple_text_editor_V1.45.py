@@ -73,8 +73,13 @@ def enter_email_info():
     subject.pack()
     body = Entry(entry_window, )
     body.pack()
+    submitButton = Button(entry_window, text="send mail", command=gather_email_info)
+    submitButton.pack()
 
 
+
+def gather_email_info():
+    pass
 
 
 
