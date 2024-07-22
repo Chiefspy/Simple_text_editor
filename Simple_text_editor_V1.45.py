@@ -114,7 +114,9 @@ def send_mail(sender, receiver, password, subject, body):
     server.starttls()
     try:
         server.login(sender, password)
+        messagebox.showinfo(title="show info", message="logged in...")
         server.sendmail(sender, receiver, message)
+        messagebox.showinfo(title="show info", message="Email sent")
 
     except smtplib.SMTPAuthenticationError:
         messagebox.showerror(title="show error", message="Unable to login")
