@@ -69,6 +69,8 @@ def enter_email_info():
     sender_label.grid(row=1, column=0)
     sender = Entry(entry_window, )
     sender.grid(row=1, column=1)
+    receiver_label = Label(entry_window, text="Receiver:")
+    receiver_label.grid(row=2, column=0)
     receiver = Entry(entry_window,)
     receiver.grid(row=2, column=1)
     password = Entry(entry_window, )
