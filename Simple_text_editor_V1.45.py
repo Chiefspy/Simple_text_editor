@@ -94,7 +94,7 @@ def enter_email_info():
 
 
 
-def gather_email_info():
+def gather_email_info(sender, receiver, password, subject, body):
     pass
 
 
