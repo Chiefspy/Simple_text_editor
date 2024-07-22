@@ -60,7 +60,7 @@ def closeFile(window, event=None):
 
 
 def enter_email_info():
-    pass
+    entry_window = Tk()
 
     
 def send_mail(sender, receiver, password, subject, body):
