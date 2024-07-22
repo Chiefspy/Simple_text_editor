@@ -95,7 +95,11 @@ def enter_email_info():
 
 
 def gather_email_info(sender, receiver, password, subject, body):
-    pass
+    sender = sender.get()
+    receiver = receiver.get()
+    password = password.get()
+    subject = subject.get()
+    body = body.get()
 
 
 
