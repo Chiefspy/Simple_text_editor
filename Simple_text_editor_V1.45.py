@@ -234,6 +234,8 @@ def main():
 
     create_WindowImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/new_tab_icon.png")
     clockImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Clock.png")
+    sendMailImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Clock.png")
+    
 
 
     menuBar = Menu(window, )
@@ -265,7 +267,7 @@ def main():
     
     optionsMenu.add_command(label="View the current time", command=create_time_window, compound=LEFT, image=clockImage)
 
-    optionsMenu.add_command(label="Send an email", command=enter_email_info, compound=LEFT, image=clockImage)
+    optionsMenu.add_command(label="Send an email", command=enter_email_info, compound=LEFT, image=)
     
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
