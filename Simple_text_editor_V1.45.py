@@ -234,7 +234,7 @@ def main():
 
     create_WindowImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/new_tab_icon.png")
     clockImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Clock.png")
-    sendMailImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Clock.png")
+    sendMailImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Envelope-Download-PNG-Image.png")
     
 
 
