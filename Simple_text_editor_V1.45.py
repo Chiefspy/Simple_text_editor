@@ -100,10 +100,10 @@ def gather_email_info(sender, receiver, password, subject, body):
     password = password.get()
     subject = subject.get()
     body = body.get()
+    send_mail(sender, receiver, password, subject, body)
 
 
 
-    
 def send_mail(sender, receiver, password, subject, body):
     message = f"""From:{sender}
     To: {receiver}
