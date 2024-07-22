@@ -70,15 +70,15 @@ def enter_email_info():
     sender = Entry(entry_window, )
     sender.grid(row=1, column=1)
     receiver = Entry(entry_window, )
-    receiver.pack()
+    receiver.grid(row=2, column=2)
     password = Entry(entry_window, )
-    password.pack()
+    password.grid(row=3, column=3)
     subject = Entry(entry_window,)
-    subject.pack()
+    subject.grid(row=4, column=4)
     body = Entry(entry_window, )
-    body.pack()
+    body.grid(row=5, column=5)
     submitButton = Button(entry_window, text="send mail", command=gather_email_info)
-    submitButton.pack()
+    submitButton.grid(row=6, column=0, columnspan=2)
 
 
 
