@@ -59,6 +59,9 @@ def closeFile(window, event=None):
         return
 
 
+def enter_email_info():
+    pass
+
     
 def send_mail(sender, receiver, password, subject, body):
     message = f"""From:{sender}
@@ -261,6 +264,8 @@ def main():
     optionsMenu.add_command(label="Create new window", command=lambda: create_window(window), compound=LEFT, image=create_WindowImage)
     
     optionsMenu.add_command(label="View the current time", command=create_time_window, compound=LEFT, image=clockImage)
+
+    optionsMenu.add_command(label="Send an email", command=enter_email_info, compound=LEFT, image=clockImage)
     
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
