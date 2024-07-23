@@ -85,7 +85,7 @@ def enter_email_info():
     subject = Entry(email_notebook,)
     subject.grid(row=4, column=1)
     body_label = Label(email_notebook, text="Message:")
-    body_label.grid(row=5, column=0)
+    body_label.grid(row=5, column=0, ipady=3, ipadx=3)
     body = Entry(email_notebook,)
     body.grid(row=5, column=1)
     submitButton = Button(email_notebook, text="send mail", command=lambda: gather_email_info(sender,receiver, password, subject, body))
