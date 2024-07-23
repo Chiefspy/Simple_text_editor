@@ -99,7 +99,7 @@ def gather_email_info(sender, receiver, password, subject, body):
     receiver = receiver.get()
     password = password.get()
     subject = subject.get()
-    body = body.get()
+    body = body.get(1.0, END)
     send_mail(sender, receiver, password, subject, body)
 
 
