@@ -68,11 +68,11 @@ def enter_email_info():
 
     title_label = Label(email_frame, text="Enter your info")
     title_label.grid(row=0, column=0, columnspan=2)
-    sender_label = Label(email_frame, text="Sender:")
+    sender_label = Label(email_frame, text="Sender's email:")
     sender_label.grid(row=1, column=0)
     sender = Entry(email_frame, )
     sender.grid(row=1, column=1)
-    receiver_label = Label(email_frame , text="Receiver:")
+    receiver_label = Label(email_frame , text="Receiver's email :")
     receiver_label.grid(row=2, column=0)
     receiver = Entry(email_frame ,)
     receiver.grid(row=2, column=1)
