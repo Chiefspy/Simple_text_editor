@@ -245,6 +245,10 @@ def help(event):
     x = widget.winfo_x() - widget.startX + event.x
     y = widget.winfo_y() - widget.startY + event.y
     widget.place(x=x, y=y)
+
+
+def calculator_window():
+    pass
     
 def main():
     window = Tk()
@@ -311,6 +315,9 @@ def main():
     optionsMenu.add_command(label="View the current time", command=create_time_window, compound=LEFT, image=clockImage)
 
     optionsMenu.add_command(label="Send an email", command=enter_email_info, compound=LEFT, image=sendMailImage)
+
+    
+    optionsMenu.add_command(label="Open calculator", command=calculator_window, compound=LEFT, image=sendMailImage)
     
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
