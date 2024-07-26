@@ -248,7 +248,9 @@ def help(event):
 
 
 def calculator_window():
-    pass
+    calculatorWindow = Tk()
+    display = Label(calculatorWindow, bg="white", font=("consolas", 20), width=24, height=2)
+    display.pack()
     
 def main():
     window = Tk()
