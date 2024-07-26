@@ -282,6 +282,7 @@ def main():
     create_WindowImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/new_tab_icon.png")
     clockImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Clock.png")
     sendMailImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Envelope-Download-PNG-Image.png")
+    calculatorImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/calculator.png")
     
 
 
@@ -316,8 +317,7 @@ def main():
 
     optionsMenu.add_command(label="Send an email", command=enter_email_info, compound=LEFT, image=sendMailImage)
 
-    
-    optionsMenu.add_command(label="Open calculator", command=calculator_window, compound=LEFT, image=sendMailImage)
+    optionsMenu.add_command(label="Open calculator", command=calculator_window, compound=LEFT, image=calculatorImage)
     
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
