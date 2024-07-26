@@ -258,6 +258,23 @@ def calculator_window():
     display = Label(calculatorWindow, bg="white", font=("consolas", 20), width=24, height=2)
     display.pack()
     
+    frame = Frame(calculatorWindow)
+    frame.pack()
+
+
+def clear():
+    pass
+
+def equals():
+    pass
+
+def button_press():
+    pass
+
+
+
+
+    
 def main():
     window = Tk()
 
