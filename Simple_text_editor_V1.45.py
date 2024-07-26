@@ -254,12 +254,21 @@ def calculator_window():
 
     calculatorWindow.geometry("500x500")
 
+    equation_label = StringVar()
+
+    equation_text = ""
+
     
-    display = Label(calculatorWindow, bg="white", font=("consolas", 20), width=24, height=2)
+    display = Label(calculatorWindow, textvariable=equation_text, bg="white", font=("consolas", 20), width=24, height=2)
     display.pack()
     
     frame = Frame(calculatorWindow)
     frame.pack()
+    button1 = Button(frame, height=4, width=9, text=1, command=lambda: button_press(1))
+    button1.grid(row=0, column=0)
+    
+
+
 
 
 def clear():
@@ -268,7 +277,7 @@ def clear():
 def equals():
     pass
 
-def button_press():
+def button_press(num):
     pass
 
 
