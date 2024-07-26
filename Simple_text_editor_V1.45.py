@@ -249,6 +249,12 @@ def help(event):
 
 def calculator_window():
     calculatorWindow = Tk()
+
+    calculatorWindow.title("Calculator")
+
+    calculatorWindow.geometry("500x500")
+
+    
     display = Label(calculatorWindow, bg="white", font=("consolas", 20), width=24, height=2)
     display.pack()
     
