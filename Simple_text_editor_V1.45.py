@@ -11,9 +11,7 @@ import smtplib
 
 
 def copy(text):
-    copied_text = text.get(1.0, END)
-
-    return copied_text
+    text.event_generate("<<Copy>>")
 
 
 def delete(text):
@@ -25,7 +23,7 @@ def delete(text):
 
 
 def paste(copied_text, text):
-    text.insert(INSERT, copied_text)
+    text.event_generate("<<Paste>>")
 
 
 def saveFile(types, text, home_dir):
