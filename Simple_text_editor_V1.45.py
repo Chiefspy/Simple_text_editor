@@ -21,6 +21,9 @@ def delete(text):
     else:
         return
 
+def cut(text):
+    text.event_generate("<<Cut>>")
+
 
 def paste(copied_text, text):
     text.event_generate("<<Paste>>")
