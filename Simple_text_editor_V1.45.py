@@ -316,6 +316,7 @@ def main():
 
     deleteImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Delete.png")
     copyImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Copy.png")
+    cutImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/cut.png")
     pasteImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/paste.png")
 
     create_WindowImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/new_tab_icon.png")
