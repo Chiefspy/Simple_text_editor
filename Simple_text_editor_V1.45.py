@@ -14,7 +14,7 @@ def copy(text):
     text.event_generate("<<Copy>>")
 
 
-def delete(text):
+def clear(text):
     if messagebox.askyesno(title="askyesno",
                            message="Are you sure you want to delete all text inside the text area? All unsaved progress will be lost"):
         text.delete(1.0, END)
@@ -346,7 +346,7 @@ def main():
 
     editMenu.add_separator()
 
-    editMenu.add_command(label="delete", command=lambda: delete(text), compound=LEFT, image=deleteImage)
+    editMenu.add_command(label="delete", command=lambda: clear(text), compound=LEFT, image=deleteImage)
 
     optionsMenu = Menu(menuBar, tearoff=0)
     menuBar.add_cascade(menu=optionsMenu, label="options")
