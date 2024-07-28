@@ -353,7 +353,9 @@ def main():
 
     optionsMenu = Menu(menuBar, tearoff=0)
     menuBar.add_cascade(menu=optionsMenu, label="options")
-
+    
+    optionsMenu.add_command(label="About", command=about, compound=LEFT, image=calculatorImage)
+    
     optionsMenu.add_command(label="Create new window", command=lambda: create_window(window), compound=LEFT, image=create_WindowImage)
     
     optionsMenu.add_command(label="View the current time", command=create_time_window, compound=LEFT, image=clockImage)
@@ -361,6 +363,7 @@ def main():
     optionsMenu.add_command(label="Send an email", command=enter_email_info, compound=LEFT, image=sendMailImage)
 
     optionsMenu.add_command(label="Open calculator", command=calculator_window, compound=LEFT, image=calculatorImage)
+    
     
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
