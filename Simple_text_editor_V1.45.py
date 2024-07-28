@@ -9,6 +9,8 @@ from time import *
 import smtplib
 
 
+def about():
+    messagebox.showinfo(title="show info", message="A Simple open source text editor program")
 
 def copy(text):
     text.event_generate("<<Copy>>")
