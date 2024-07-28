@@ -347,7 +347,7 @@ def main():
 
     editMenu.add_separator()
 
-    editMenu.add_command(label="delete", command=lambda: clear(text), compound=LEFT, image=deleteImage)
+    editMenu.add_command(label="clear", command=lambda: clear(text), compound=LEFT, image=deleteImage)
 
     optionsMenu = Menu(menuBar, tearoff=0)
     menuBar.add_cascade(menu=optionsMenu, label="options")
