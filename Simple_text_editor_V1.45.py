@@ -313,6 +313,8 @@ def main():
 
 
 
+    
+    new_fileImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/new_file.png")
     saveImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/FlopyDisk.png")
     openImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Folder.png")
     exitImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Stop.png")
@@ -336,7 +338,7 @@ def main():
     fileMenu = Menu(menuBar, tearoff=0)
     menuBar.add_cascade(menu=fileMenu, label="file")
 
-    fileMenu.add_command(label="New", command=lambda: new_file(window), image=saveImage, compound=LEFT)
+    fileMenu.add_command(label="New", command=lambda: new_file(window), image=new_fileImage, compound=LEFT)
     fileMenu.add_command(label="save", command=lambda: saveFile(filetypes, text, home_dir), image=saveImage, compound=LEFT)
     fileMenu.add_command(label="Open", command=lambda: openFile(filetypes, text, home_dir), image=openImage, compound=LEFT)
 
