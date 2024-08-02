@@ -295,6 +295,10 @@ def calculator_window():
     plus.grid(row=0, column=3)
     minus = Button(frame, height=4, width=9, text="-", command=lambda: button_press("-"))
     minus.grid(row=1, column=3)
+    multiply = Button(frame, height=4, width=9, text="*", command=lambda: button_press("*"))
+    multiply.grid(row=2, column=3)
+    divide = Button(frame, height=4, width=9, text="/", command=lambda: button_press("/"))
+    divide.grid(row=3, column=3)
     clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clear())
     clear.pack()
 
