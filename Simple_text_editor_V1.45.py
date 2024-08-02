@@ -289,6 +289,8 @@ def calculator_window():
     button0.grid(row=3, column=0)
     decimal = Button(frame, height=4, width=9, text="*", command=lambda: button_press("*"))
     decimal.grid(row=3, column=1)
+    equal = Button(frame, height=4, width=9, text="=", command=lambda: button_press("="))
+    equal.grid(row=3, column=2)
     clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clear())
     clear.pack()
 
