@@ -271,6 +271,8 @@ def calculator_window():
     button1.grid(row=0, column=0)
     button2 = Button(frame, height=4, width=9, text=2, command=lambda: button_press(2))
     button2.grid(row=0, column=1)
+    button3 = Button(frame, height=4, width=9, text=3, command=lambda: button_press(3))
+    button3.grid(row=0, column=2)
     clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clear())
     clear.pack()
 
