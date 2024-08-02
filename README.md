@@ -36,7 +36,7 @@ python Simple_text_editor_V1.45.py
 ```
 
 ### Removes Program 
-
+#### Windows
 ```bash
 rm Simple_text_editor -r -force
 ```
