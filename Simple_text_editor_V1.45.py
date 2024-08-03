@@ -308,7 +308,13 @@ def clears(equation_label, equation_text):
     equation_label.set("")
 
 def equals(equation_label, equation_text):
-    pass
+    try:
+        total = str(eval(equation_text))
+        equation_label.set(total)
+        equation_text = total
+        
+
+
 
 def button_press(num, equation_label, equation_text):
     equation_text = equation_text + str(num)
