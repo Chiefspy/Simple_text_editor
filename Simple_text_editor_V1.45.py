@@ -267,65 +267,65 @@ def calculator_window():
     
     frame = Frame(calculatorWindow)
     frame.pack()
-    button1 = Button(frame, height=4, width=9, text=1, command=lambda: button_press(1, equation_label, equation_text))
+    button1 = Button(frame, height=4, width=9, text=1, command=lambda: button_press(1, equation_label))
     button1.grid(row=0, column=0)
-    button2 = Button(frame, height=4, width=9, text=2, command=lambda: button_press(2, equation_label, equation_text))
+    button2 = Button(frame, height=4, width=9, text=2, command=lambda: button_press(2, equation_label))
     button2.grid(row=0, column=1)
-    button3 = Button(frame, height=4, width=9, text=3, command=lambda: button_press(3, equation_label, equation_text))
+    button3 = Button(frame, height=4, width=9, text=3, command=lambda: button_press(3, equation_label))
     button3.grid(row=0, column=2)
-    button4 = Button(frame, height=4, width=9, text=4, command=lambda: button_press(4, equation_label, equation_text))
+    button4 = Button(frame, height=4, width=9, text=4, command=lambda: button_press(4, equation_label))
     button4.grid(row=1, column=0)
-    button5 = Button(frame, height=4, width=9, text=5, command=lambda: button_press(5, equation_label, equation_text))
+    button5 = Button(frame, height=4, width=9, text=5, command=lambda: button_press(5, equation_label))
     button5.grid(row=1, column=1)
-    button6 = Button(frame, height=4, width=9, text=6, command=lambda: button_press(6, equation_label, equation_text))
+    button6 = Button(frame, height=4, width=9, text=6, command=lambda: button_press(6, equation_label))
     button6.grid(row=1, column=2)
-    button7 = Button(frame, height=4, width=9, text=7, command=lambda: button_press(7, equation_label, equation_text))
+    button7 = Button(frame, height=4, width=9, text=7, command=lambda: button_press(7, equation_label))
     button7.grid(row=2, column=0)
-    button8 = Button(frame, height=4, width=9, text=8, command=lambda: button_press(8, equation_label, equation_text))
+    button8 = Button(frame, height=4, width=9, text=8, command=lambda: button_press(8, equation_label))
     button8.grid(row=2, column=1)
-    button9 = Button(frame, height=4, width=9, text=9, command=lambda: button_press(9, equation_label, equation_text))
+    button9 = Button(frame, height=4, width=9, text=9, command=lambda: button_press(9, equation_label))
     button9.grid(row=2, column=2)
-    button0 = Button(frame, height=4, width=9, text=0, command=lambda: button_press(0, equation_label, equation_text))
+    button0 = Button(frame, height=4, width=9, text=0, command=lambda: button_press(0, equation_label))
     button0.grid(row=3, column=0)
-    decimal = Button(frame, height=4, width=9, text="*", command=lambda: button_press("*", equation_label, equation_text))
+    decimal = Button(frame, height=4, width=9, text="*", command=lambda: button_press("*", equation_label))
     decimal.grid(row=3, column=1)
-    equal = Button(frame, height=4, width=9, text="=", command=lambda: equals(equation_label, equation_text))
+    equal = Button(frame, height=4, width=9, text="=", command=lambda: equals(equation_label))
     equal.grid(row=3, column=2)
-    plus = Button(frame, height=4, width=9, text="+", command=lambda: button_press("+", equation_label, equation_text))
+    plus = Button(frame, height=4, width=9, text="+", command=lambda: button_press("+", equation_label))
     plus.grid(row=0, column=3)
-    minus = Button(frame, height=4, width=9, text="-", command=lambda: button_press("-", equation_label, equation_text))
+    minus = Button(frame, height=4, width=9, text="-", command=lambda: button_press("-", equation_label))
     minus.grid(row=1, column=3)
-    multiply = Button(frame, height=4, width=9, text="*", command=lambda: button_press("*", equation_label, equation_text))
+    multiply = Button(frame, height=4, width=9, text="*", command=lambda: button_press("*", equation_label))
     multiply.grid(row=2, column=3)
-    divide = Button(frame, height=4, width=9, text="/", command=lambda: button_press("/", equation_label, equation_text))
+    divide = Button(frame, height=4, width=9, text="/", command=lambda: button_press("/", equation_label))
     divide.grid(row=3, column=3)
-    clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clears(equation_label, equation_text))
+    clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clears(equation_label))
     clear.pack()
 
 
-def clears(equation_label, equation_text):
-    equation_text = ""
+def clears(equation_label):
+    # equation_text = ""
     equation_label.set("")
 
-def equals(equation_label, equation_text):
+def equals(equation_label):
     try:
-        total = str(eval(equation_text))
+        total = str(eval(equation_label.get()))
         equation_label.set(total)
-        equation_text = total
+        # equation_text = total
 
     except SyntaxError:
         equation_label.set("Syntax Error")
-        equation_text = ""
+        # equation_text = ""
 
     except ZeroDivisionError:
         equation_label.set("ZeroDivisionError")
-        equation_text = ""
+        # equation_text = ""
         
 
 
 
-def button_press(num, equation_label, equation_text):
-    equation_text = equation_text + str(num)
+def button_press(num, equation_label):
+    equation_text = equation_label.get() + str(num)
     equation_label.set(equation_text)
 
 
