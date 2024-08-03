@@ -316,7 +316,8 @@ def equals(display, equation_text):
     pass
 
 def button_press(num, display, equation_text):
-    pass
+    equation_text = equation_text + str(num)
+    display.set(equation_text)
 
 
 def new_file(window):
