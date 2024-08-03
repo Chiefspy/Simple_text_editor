@@ -309,7 +309,8 @@ def calculator_window():
 
 
 def clear(display, equation_text):
-    pass
+    equation_text = ""
+    display.set("")
 
 def equals(display, equation_text):
     pass
