@@ -258,8 +258,8 @@ def calculator_window():
     calculatorWindow.geometry("500x500")
 
     equation_label = StringVar()
-
-    equation_text = ""
+    equation_label.set("")
+    # equation_text = ""
 
     
     display = Label(calculatorWindow, textvariable=equation_text, bg="white", font=("consolas", 20), width=24, height=2)
@@ -321,8 +321,6 @@ def equals(equation_label):
         equation_label.set("ZeroDivisionError")
         # equation_text = ""
         
-
-
 
 def button_press(num, equation_label):
     equation_text = equation_label.get() + str(num)
