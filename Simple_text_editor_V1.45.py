@@ -299,11 +299,11 @@ def calculator_window():
     multiply.grid(row=2, column=3)
     divide = Button(frame, height=4, width=9, text="/", command=lambda: button_press("/", equation_label, equation_text))
     divide.grid(row=3, column=3)
-    clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clear(equation_label, equation_text))
+    clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clears(equation_label, equation_text))
     clear.pack()
 
 
-def clear(equation_label, equation_text):
+def clears(equation_label, equation_text):
     equation_text = ""
     equation_label.set("")
 
