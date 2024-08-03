@@ -287,7 +287,7 @@ def calculator_window():
     button9.grid(row=2, column=2)
     button0 = Button(frame, height=4, width=9, text=0, command=lambda: button_press(0, equation_label))
     button0.grid(row=3, column=0)
-    decimal = Button(frame, height=4, width=9, text="*", command=lambda: button_press(".", equation_label))
+    decimal = Button(frame, height=4, width=9, text=".", command=lambda: button_press(".", equation_label))
     decimal.grid(row=3, column=1)
     equal = Button(frame, height=4, width=9, text="=", command=lambda: equals(equation_label))
     equal.grid(row=3, column=2)
