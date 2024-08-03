@@ -303,21 +303,16 @@ def calculator_window():
     clear.pack()
 
 
-    
-
-
-
-
-def clear(display, equation_text):
+def clear(equation_label, equation_text):
     equation_text = ""
-    display.set("")
+    equation_label.set("")
 
-def equals(display, equation_text):
+def equals(equation_label, equation_text):
     pass
 
-def button_press(num, display, equation_text):
+def button_press(num, equation_label, equation_text):
     equation_text = equation_text + str(num)
-    display.set(equation_text)
+    equation_label.set(equation_text)
 
 
 def new_file(window):
