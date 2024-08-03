@@ -312,6 +312,14 @@ def equals(equation_label, equation_text):
         total = str(eval(equation_text))
         equation_label.set(total)
         equation_text = total
+
+    except SyntaxError:
+        equation_label.set("Syntax Error")
+        equation_text = ""
+
+    except ZeroDivisionError:
+        equation_label.set("ZeroDivisionError")
+        equation_text = ""
         
 
 
