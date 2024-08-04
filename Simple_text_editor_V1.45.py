@@ -329,7 +329,7 @@ def calculator_window():
     multiply.grid(row=2, column=3)
     divide = Button(frame, height=4, width=9, text="/", command=lambda: button_press("/"))
     divide.grid(row=3, column=3)
-    clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clears())
+    clear = Button(calculatorWindow, height=4, width=12, text="clear", command=clears)
     clear.pack()
 
 """
