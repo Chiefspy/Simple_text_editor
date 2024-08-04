@@ -251,16 +251,14 @@ def help(event):
 
 
 def calculator_window():
-    global equation_text
-    equation_text = ""
     calculatorWindow = Tk()
 
     calculatorWindow.title("Calculator")
 
     calculatorWindow.geometry("500x500")
 
+    equation_text = ""    
     equation_label = StringVar()
-    equation_label.set("")
 
     
     display = Label(calculatorWindow, textvariable=equation_label, bg="white", font=("consolas", 20), width=24, height=2)
@@ -268,32 +266,6 @@ def calculator_window():
     
     frame = Frame(calculatorWindow)
     frame.pack()
-
-    def clears():
-        global equation_text
-        equation_text = ""
-        equation_label.set("")
-
-    def equals():
-        global equation_text
-        try:
-            total = str(eval(equation_text))
-            equation_label.set(total)
-            equation_text = total
-
-        except SyntaxError:
-            equation_label.set("Syntax Error")
-            equation_text = ""
-
-        except ZeroDivisionError:
-            equation_label.set("ZeroDivisionError")
-            equation_text = ""
-        
-
-    def button_press(num):
-        global equation_text
-        equation_text = equation_text + str(num)
-        equation_label.set(equation_text)
 
 
     
@@ -332,30 +304,31 @@ def calculator_window():
     clear = Button(calculatorWindow, height=4, width=12, text="clear", command=clears)
     clear.pack()
 
-"""
-def clears(equation_label):
-    # equation_text = ""
+def clears():
+    global equation_text
+    equation_text = ""
     equation_label.set("")
 
-def equals(equation_label):
+def equals():
+    global equation_text
     try:
-        total = str(eval(equation_label.get()))
+        total = str(eval(equation_text))
         equation_label.set(total)
-        # equation_text = total
+        equation_text = total
 
     except SyntaxError:
         equation_label.set("Syntax Error")
-        # equation_text = ""
+        equation_text = ""
 
     except ZeroDivisionError:
         equation_label.set("ZeroDivisionError")
-        # equation_text = ""
+        equation_text = ""
         
 
-def button_press(num, equation_label):
-    equation_text = equation_label.get() + str(num)
+def button_press(num):
+    global equation_text
+    equation_text = equation_text + str(num)
     equation_label.set(equation_text)
-"""
 
 def new_file(window):
     window.title("Untitled")
