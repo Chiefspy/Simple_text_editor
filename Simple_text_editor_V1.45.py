@@ -267,6 +267,32 @@ def calculator_window():
     
     frame = Frame(calculatorWindow)
     frame.pack()
+
+    def clears(equation_label):
+    # equation_text = ""
+    equation_label.set("")
+
+    def equals(equation_label):
+        try:
+            total = str(eval(equation_label.get()))
+            equation_label.set(total)
+            # equation_text = total
+
+        except SyntaxError:
+            equation_label.set("Syntax Error")
+            # equation_text = ""
+
+        except ZeroDivisionError:
+            equation_label.set("ZeroDivisionError")
+            # equation_text = ""
+        
+
+    def button_press(num, equation_label):
+        equation_text = equation_label.get() + str(num)
+        equation_label.set(equation_text)
+
+
+    
     button1 = Button(frame, height=4, width=9, text="1", command=lambda: button_press(1, equation_label))
     button1.grid(row=0, column=0)
     button2 = Button(frame, height=4, width=9, text="2", command=lambda: button_press(2, equation_label))
@@ -302,7 +328,7 @@ def calculator_window():
     clear = Button(calculatorWindow, height=4, width=12, text="clear", command=lambda: clears(equation_label))
     clear.pack()
 
-
+"""
 def clears(equation_label):
     # equation_text = ""
     equation_label.set("")
@@ -325,7 +351,7 @@ def equals(equation_label):
 def button_press(num, equation_label):
     equation_text = equation_label.get() + str(num)
     equation_label.set(equation_text)
-
+"""
 
 def new_file(window):
     window.title("Untitled")
