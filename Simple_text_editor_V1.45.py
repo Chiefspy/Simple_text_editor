@@ -259,10 +259,10 @@ def calculator_window():
 
     equation_label = StringVar()
     equation_label.set("")
-    # equation_text = ""
+    equation_text = ""
 
     
-    display = Label(calculatorWindow, textvariable=equation_label, bg="white", font=("consolas", 20), width=24, height=2)
+    display = Label(calculatorWindow, textvariable=equation_text, bg="white", font=("consolas", 20), width=24, height=2)
     display.pack()
     
     frame = Frame(calculatorWindow)
