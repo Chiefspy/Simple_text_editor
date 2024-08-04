@@ -6,6 +6,8 @@ If you find any bugs or better ways to implement part(s) of the project don't he
 
 *Warning*
 Make sure you have python installed on your system and supports the imported libraries
+Currently the calculator is not working as intend so please be patient also if you find a solution please let me know ,
+thank you.
 
 **Notice**
 Program now supports relative and absolute filepaths.
