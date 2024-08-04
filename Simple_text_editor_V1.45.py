@@ -252,6 +252,7 @@ def help(event):
 
 def calculator_window():
     global equation_text
+    equation_text = ""
     calculatorWindow = Tk()
 
     calculatorWindow.title("Calculator")
@@ -260,7 +261,6 @@ def calculator_window():
 
     equation_label = StringVar()
     equation_label.set("")
-    equation_text = ""
 
     
     display = Label(calculatorWindow, textvariable=equation_label, bg="white", font=("consolas", 20), width=24, height=2)
