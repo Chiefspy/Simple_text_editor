@@ -269,8 +269,8 @@ def calculator_window():
     frame.pack()
 
     def clears(equation_label):
-    # equation_text = ""
-    equation_label.set("")
+        # equation_text = ""
+        equation_label.set("")
 
     def equals(equation_label):
         try:
