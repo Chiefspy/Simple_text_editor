@@ -308,11 +308,13 @@ def calculator_window():
 
 def clears():
     global equation_text
+    global equation_label
     equation_text = ""
     equation_label.set("")
 
 def equals():
     global equation_text
+    global equation_label
     try:
         total = str(eval(equation_text))
         equation_label.set(total)
@@ -329,6 +331,7 @@ def equals():
 
 def button_press(num):
     global equation_text
+    global equation_label
     equation_text = equation_text + str(num)
     equation_label.set(equation_text)
 
