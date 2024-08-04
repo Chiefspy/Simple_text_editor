@@ -418,6 +418,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+    calculator_window()
 
 
 
