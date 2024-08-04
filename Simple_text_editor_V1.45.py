@@ -270,10 +270,12 @@ def calculator_window():
     frame.pack()
 
     def clears(equation_label):
+        global equation_text
         # equation_text = ""
         equation_label.set("")
 
     def equals(equation_label):
+        global equation_text
         try:
             total = str(eval(equation_label.get()))
             equation_label.set(total)
@@ -289,6 +291,7 @@ def calculator_window():
         
 
     def button_press(num, equation_label):
+        global equation_text
         equation_text = equation_label.get() + str(num)
         equation_label.set(equation_text)
 
