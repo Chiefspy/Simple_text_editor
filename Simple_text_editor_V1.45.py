@@ -252,6 +252,7 @@ def help(event):
 
 def calculator_window():
     global equation_text
+    global equation_label
     calculatorWindow = Tk()
 
     calculatorWindow.title("Calculator")
