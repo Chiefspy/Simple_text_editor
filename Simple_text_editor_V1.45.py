@@ -271,28 +271,28 @@ def calculator_window():
 
     def clears(equation_label):
         global equation_text
-        # equation_text = ""
+        equation_text = ""
         equation_label.set("")
 
     def equals(equation_label):
         global equation_text
         try:
-            total = str(eval(equation_label.get()))
+            total = str(eval(equation_text))
             equation_label.set(total)
-            # equation_text = total
+            equation_text = total
 
         except SyntaxError:
             equation_label.set("Syntax Error")
-            # equation_text = ""
+            equation_text = ""
 
         except ZeroDivisionError:
             equation_label.set("ZeroDivisionError")
-            # equation_text = ""
+            equation_text = ""
         
 
     def button_press(num, equation_label):
         global equation_text
-        equation_text = equation_label.get() + str(num)
+        equation_text = equation_text + str(num)
         equation_label.set(equation_text)
 
 
