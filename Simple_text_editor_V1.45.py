@@ -430,6 +430,9 @@ def main():
     color_button = Button(optionsFrame, text="color")
     color_button.pack()
 
+    font_box = Button(optionsFrame, text="font")
+    font_box.pack()
+
 
     window.mainloop()
 
