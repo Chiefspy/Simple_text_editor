@@ -249,7 +249,7 @@ def help(event):
     y = widget.winfo_y() - widget.startY + event.y
     widget.place(x=x, y=y)
 
-
+# currently not working as intended please be patient
 def calculator_window():
     global equation_text
     global equation_label
