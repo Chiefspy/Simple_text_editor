@@ -427,6 +427,9 @@ def main():
     optionsFrame = Frame(window)
     optionsFrame.pack()
 
+    color_button = Button(optionsFrame, text="color")
+    color_button.pack()
+
 
     window.mainloop()
 
