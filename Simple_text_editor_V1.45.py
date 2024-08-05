@@ -425,7 +425,7 @@ def main():
     text.pack(expand=True, fill="both")
 
     optionsFrame = Frame(window)
-    optionsFrame.grid()
+    optionsFrame.pack()
 
 
     window.mainloop()
