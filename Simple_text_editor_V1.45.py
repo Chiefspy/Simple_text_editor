@@ -428,7 +428,7 @@ def main():
     optionsFrame.pack()
 
     color_button = Button(optionsFrame, text="color")
-    color_button.pack()
+    color_button.pack(side=LEFT)
 
     font_box = Button(optionsFrame, text="font")
     font_box.pack()
