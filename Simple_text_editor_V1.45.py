@@ -430,10 +430,10 @@ def main():
     color_button = Button(optionsFrame, text="color")
     color_button.pack(side=LEFT)
 
-    font_box = Button(optionsFrame, text="font")
+    font_box = OptionMenu(optionsFrame, text="font")
     font_box.pack(side=LEFT)
 
-    size_box = Button(optionsFrame, text="size")
+    size_box = SpinBox(optionsFrame, text="size")
     size_box.pack()
 
 
