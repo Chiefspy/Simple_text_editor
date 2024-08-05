@@ -433,6 +433,9 @@ def main():
     font_box = Button(optionsFrame, text="font")
     font_box.pack()
 
+    size_box = Button(optionsFrame, text="size")
+    size_box.pack()
+
 
     window.mainloop()
 
