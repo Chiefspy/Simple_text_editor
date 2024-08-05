@@ -346,6 +346,7 @@ def main():
 
     window.title("Simple Text Editor")
 
+
     home_dir = os.path.expanduser('~')
 
     window.bind("<Button-3>", lambda event: closeFile(window))
@@ -422,6 +423,9 @@ def main():
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
     text.pack(expand=True, fill="both")
+
+    optionsFrame = Frame(window)
+    optionsFrame.grid()
 
 
     window.mainloop()
