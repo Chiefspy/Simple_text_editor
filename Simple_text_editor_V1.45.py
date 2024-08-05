@@ -336,8 +336,9 @@ def button_press(num):
     equation_text = equation_text + str(num)
     equation_label.set(equation_text)
 
-def new_file(window):
+def new_file(window, text_area):
     window.title("Untitled")
+    text_area.delete(1.0, END)
 
     
 def main():
@@ -386,7 +387,7 @@ def main():
     fileMenu = Menu(menuBar, tearoff=0)
     menuBar.add_cascade(menu=fileMenu, label="file")
 
-    fileMenu.add_command(label="New", command=lambda: new_file(window), image=new_fileImage, compound=LEFT)
+    fileMenu.add_command(label="New", command=lambda: new_file(window, text), image=new_fileImage, compound=LEFT)
     fileMenu.add_command(label="save", command=lambda: saveFile(filetypes, text, home_dir), image=saveImage, compound=LEFT)
     fileMenu.add_command(label="Open", command=lambda: openFile(filetypes, text, home_dir), image=openImage, compound=LEFT)
 
