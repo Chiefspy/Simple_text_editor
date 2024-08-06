@@ -438,7 +438,7 @@ def main():
     font_box = OptionMenu(optionsFrame, font_name, *font.families())
     font_box.pack(side=LEFT)
 
-    size_box = SpinBox(optionsFrame, from_=1, to=100, textvariable=font_size)
+    size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size)
     size_box.pack()
 
 
