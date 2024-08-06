@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
 from tkinter import ttk
-from tkinter import font
+from tkinter import font, colorchooser
 import os
 import time
 from Ball import *
