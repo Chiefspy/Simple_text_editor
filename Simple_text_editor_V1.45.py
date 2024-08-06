@@ -419,7 +419,11 @@ def main():
 
     optionsMenu.add_command(label="Open calculator", command=calculator_window, compound=LEFT, image=calculatorImage)
     
-    
+    font_name = StringVar(window)
+    font_name.set("Arial")
+
+    font_size = StringVar(window)
+    font_name.set("25")
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
     text.pack(expand=True, fill="both")
