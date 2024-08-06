@@ -434,7 +434,7 @@ def main():
     color_button = Button(optionsFrame, text="color")
     color_button.pack(side=LEFT)
 
-    font_box = OptionMenu(optionsFrame, font_name, *font_familes())
+    font_box = OptionMenu(optionsFrame, font_name, *font.familes())
     font_box.pack(side=LEFT)
 
     size_box = SpinBox(optionsFrame, from_=1, to=100, textvariable=font_size)
