@@ -341,6 +341,11 @@ def new_file(window, text_area):
     window.title("Untitled")
     text_area.delete(1.0, END)
 
+
+def change_color():
+    pass
+
+
     
 def main():
     window = Tk()
@@ -432,7 +437,7 @@ def main():
     optionsFrame = Frame(window)
     optionsFrame.pack()
 
-    color_button = Button(optionsFrame, text="color")
+    color_button = Button(optionsFrame, text="color", command=change_color)
     color_button.pack(side=LEFT)
 
     font_box = OptionMenu(optionsFrame, font_name, *font.families())
