@@ -345,7 +345,7 @@ def new_file(window, text_area):
 def change_color():
     pass
 
-def change_font():
+def change_font(*args):
     pass
 
 
