@@ -343,7 +343,7 @@ def new_file(window, text_area):
 
 
 def change_color():
-    pass
+    color = colorchooser.askcolor()
 
 def change_font(*args):
     pass
