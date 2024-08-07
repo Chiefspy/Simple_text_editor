@@ -345,6 +345,9 @@ def new_file(window, text_area):
 def change_color():
     pass
 
+def change_font():
+    pass
+
 
     
 def main():
@@ -440,10 +443,10 @@ def main():
     color_button = Button(optionsFrame, text="color", command=change_color)
     color_button.pack(side=LEFT)
 
-    font_box = OptionMenu(optionsFrame, font_name, *font.families())
+    font_box = OptionMenu(optionsFrame, font_name, *font.families(), command=change_font)
     font_box.pack(side=LEFT)
 
-    size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size)
+    size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size, command=change_font)
     size_box.pack()
 
 
