@@ -348,7 +348,6 @@ def change_color(text_area):
         text_area.config(fg=color[1])
 
 def change_font(text, font_name):
-    font_name = args[0]
     text.config(font=(font_name, ))
 
 def change_fontSize(text, font_size):
