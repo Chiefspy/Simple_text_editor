@@ -346,7 +346,7 @@ def change_color(text_area):
     color = colorchooser.askcolor()
     text_area.config(fg=color[1])
 
-def change_font(*args):
+def change_font(text, *args):
     text.config(font=(font_name.get(), font_size.get()))
 
 
