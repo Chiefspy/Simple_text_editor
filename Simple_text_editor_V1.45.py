@@ -347,7 +347,7 @@ def change_color(text_area):
     text_area.config(fg=color[1])
 
 def change_font(*args):
-    pass
+    text_area.config(font=(font_name.get(), font_size.get())
 
 
     
@@ -444,10 +444,10 @@ def main():
     color_button = Button(optionsFrame, text="color", command=lambda: change_color(text))
     color_button.pack(side=LEFT)
 
-    font_box = OptionMenu(optionsFrame, font_name, *font.families(), command=change_font)
+    font_box = OptionMenu(optionsFrame, font_name, *font.families(), command=lambda: change_font(text))
     font_box.pack(side=LEFT)
 
-    size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size, command=change_font)
+    size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size, command=lambda: change_font(text)
     size_box.pack()
 
 
