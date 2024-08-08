@@ -344,14 +344,15 @@ def new_file(window, text_area):
 
 def change_color(text_area):
     color = colorchooser.askcolor()
-    text_area.config(fg=color[1])
+    if color[1]:
+        text_area.config(fg=color[1])
 
-def change_font(text, *args):
+def change_font(text, font_name):
     font_name = args[0]
     text.config(font=(font_name, ))
 
 def change_fontSize(text, font_size):
-    text.config(font=( ,font_size))
+    text.config(font=(font_name ,int(font_size)))
 
 
     
@@ -451,7 +452,7 @@ def main():
     font_box = OptionMenu(optionsFrame, font_name, *font.families(), command=lambda font_name: change_font(text, font_name))
     font_box.pack(side=LEFT)
 
-    size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size, command=lambda: change_fontSize(text, font_size))
+    size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size, command=lambda: change_fontSize(text, font_size.get()))
     size_box.pack()
 
 
