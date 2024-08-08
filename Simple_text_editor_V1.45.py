@@ -447,8 +447,6 @@ def main():
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
     text.pack(expand=True, fill="both")
 
-    window.pack_propagate(False)
-    text.pack_propagate(False)
 
     optionsFrame = Frame(window)
     optionsFrame.pack()
