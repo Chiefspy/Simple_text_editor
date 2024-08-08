@@ -365,8 +365,6 @@ def main():
 
     window.title("Simple Text Editor")
 
-    window.geometry("500x500")
-
 
     home_dir = os.path.expanduser('~')
 
