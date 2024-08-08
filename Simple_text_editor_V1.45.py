@@ -449,7 +449,7 @@ def main():
 
 
     optionsFrame = Frame(window)
-    optionsFrame.pack()
+    optionsFrame.pack(expand=True, fill="both")
 
     color_button = Button(optionsFrame, text="color", command=lambda: change_color(text))
     color_button.pack(side=LEFT)
