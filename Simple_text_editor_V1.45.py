@@ -458,7 +458,7 @@ def main():
     font_box.pack(side=LEFT)
 
     size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size, command=lambda: change_fontSize(text, font_size.get()))
-    size_box.pack()
+    size_box.pack(side=LEFT)
 
 
     window.mainloop()
