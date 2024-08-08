@@ -348,10 +348,13 @@ def change_color(text_area):
         text_area.config(fg=color[1])
 
 def change_font(text, font_name):
-    c
+    current_font = font.Font(font=text["font"])
+    font_size = current_font.actual()["size"]
     text.config(font=(font_name, font_size ))
 
 def change_fontSize(text, font_size):
+    current_font = font.Font(font=text["font"])
+    font_name = current_font.actual()["family"]
     text.config(font=(font_name ,int(font_size)))
 
 
