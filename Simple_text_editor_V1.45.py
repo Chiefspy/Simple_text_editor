@@ -455,7 +455,7 @@ def main():
     font_size.set("25")
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
-    text.grid(sticky= N + E + S + W)
+    text.pack(expand=True, fill="both")
 
 
     optionsFrame = Frame(window)
