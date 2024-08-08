@@ -342,8 +342,9 @@ def new_file(window, text_area):
     text_area.delete(1.0, END)
 
 
-def change_color():
+def change_color(text_area):
     color = colorchooser.askcolor()
+    text_area.config(fg=color[1])
 
 def change_font(*args):
     pass
@@ -440,7 +441,7 @@ def main():
     optionsFrame = Frame(window)
     optionsFrame.pack()
 
-    color_button = Button(optionsFrame, text="color", command=change_color)
+    color_button = Button(optionsFrame, text="color", command=lambda: change_color(text))
     color_button.pack(side=LEFT)
 
     font_box = OptionMenu(optionsFrame, font_name, *font.families(), command=change_font)
