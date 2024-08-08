@@ -1,8 +1,8 @@
 from tkinter import *
-from tkinter import filedialog
-from tkinter import messagebox
-from tkinter import ttk
-from tkinter import font, colorchooser
+# from tkinter import filedialog
+# from tkinter import messagebox
+# from tkinter import ttk
+from tkinter import font, colorchooser, filedialog, messagebox, ttk
 import os
 import time
 from Ball import *
