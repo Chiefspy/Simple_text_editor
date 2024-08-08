@@ -365,6 +365,16 @@ def main():
 
     window.title("Simple Text Editor")
 
+    window_width = 500 
+    window_height = 500
+    screen_width = window.winfo_screenwidth()
+    screen_height = window.winfo_screenheight()
+
+    
+    x = int((screen_width / 2) - (window_width / 2))
+    y = int((screen_height / 2) - (window_height / 2))
+    window.geometry(f"{window_width}x{window_height}+{x}+{y}")
+
 
     home_dir = os.path.expanduser('~')
 
