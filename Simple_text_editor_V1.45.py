@@ -343,7 +343,7 @@ def new_file(window, text_area):
 
 
 def change_color(text_area):
-    color = colorchooser.askcolor()
+    color = colorchooser.askcolor(title="Pick a color")
     if color[1]:
         text_area.config(fg=color[1])
 
