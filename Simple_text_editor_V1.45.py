@@ -467,7 +467,7 @@ def main():
     font_box = OptionMenu(optionsFrame, font_name, *font.families(), command=lambda font_name: change_font(text, font_name))
     font_box.pack(side=LEFT)
 
-    size_box = Spinbox(optionsFrame, from_=1, to=100, textvariable=font_size, command=lambda: change_fontSize(text, font_size.get()))
+    size_box = Spinbox(optionsFrame, from_=1, to=25, textvariable=font_size, command=lambda: change_fontSize(text, font_size.get()))
     size_box.pack(side=LEFT)
 
 
