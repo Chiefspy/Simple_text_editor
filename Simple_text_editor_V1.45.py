@@ -335,7 +335,7 @@ def equals():
         equation_text = ""
         
 
-def button_press(num):
+def button_press(num, ):
     global equation_text
     global equation_label
     equation_text = equation_text + str(num)
@@ -344,8 +344,7 @@ def button_press(num):
     print(f"button pressed {num}, equation text {equation_text}") # debug statement
 
     
-    equation_label = StringVar()
-    equation_label.set(equation_text)
+
 
 
 
