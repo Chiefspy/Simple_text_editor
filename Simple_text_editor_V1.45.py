@@ -343,6 +343,12 @@ def button_press(num):
      
     print(f"button pressed {num}, equation text {equation_text}") # debug statement
 
+    
+    equation_label = StringVar()
+    equation_label.set(equation_text)
+
+
+
 def new_file(window, text_area):
     window.title("Untitled")
     text_area.delete(1.0, END)
