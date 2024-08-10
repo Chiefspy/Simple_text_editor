@@ -452,7 +452,7 @@ def main():
     font_name.set("Arial")
 
     font_size = StringVar(window)
-    font_size.set("13")
+    font_size.set("25")
 
     text = Text(window, padx=20, pady=20, font=("Ink free", 20), width=40, height=20)
     text.pack(expand=True, fill="both")
