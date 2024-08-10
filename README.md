@@ -34,7 +34,7 @@ cd ~\Simple_text_editor
 
 ### Run the Program
 ```bash
-python Simple_text_editor_V1.45.py
+python Simple_text_editor_V1.5.py
 ```
 
 ### Removes Program 
