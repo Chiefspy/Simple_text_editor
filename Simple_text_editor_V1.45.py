@@ -307,6 +307,10 @@ def calculator_window():
     divide.grid(row=3, column=3)
     clear = Button(calculatorWindow, height=4, width=12, text="clear", command=clears)
     clear.pack()
+    calculatorWindow.mainloop()
+    
+
+
 
 def clears():
     global equation_text
