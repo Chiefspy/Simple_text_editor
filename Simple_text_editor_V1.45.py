@@ -340,6 +340,8 @@ def button_press(num):
     global equation_label
     equation_text = equation_text + str(num)
     equation_label.set(equation_text)
+     
+    print(f"button pressed {num}, equation text {equation_text}") # debug statement
 
 def new_file(window, text_area):
     window.title("Untitled")
