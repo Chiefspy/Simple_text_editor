@@ -8,7 +8,7 @@ import smtplib
 
 
 def about():
-    messagebox.showinfo(title="About", message="A Simple open source text editor program")
+    messagebox.showinfo(title="About", message="A Simple open source text editor program , still a work in progress. To use the copy, cut , and paste features make sure to highlight some text and then press a button to use the feature.")
 
 
 def copy(text):
