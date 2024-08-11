@@ -38,7 +38,7 @@ python Simple_text_editor_V1.5.py
 ```
 
 ### Removes Program 
-#### Make sure you are out of the the project directory before you remove it or it won't work
+##### Make sure you are out of the the project directory before you remove it or it won't work
 #### Windows
 ```bash
 rm Simple_text_editor -r -force
