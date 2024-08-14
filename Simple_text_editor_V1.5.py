@@ -384,6 +384,8 @@ def main():
                  ("CSS file", "*.css"),
                  ("C++ file", "*.cpp")]
 
+    window.iconphoto(True, programImage)
+
     programImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/program_icon.png")
 
     new_fileImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/new_file.png")
