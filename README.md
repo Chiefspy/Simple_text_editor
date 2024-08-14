@@ -44,8 +44,8 @@ python Simple_text_editor_V1.5.py
 rm Simple_text_editor -r -force
 ```
 #### linux
-'''bash
+```bash
 rmdir Simple_text_editor
-'''
+```
 
 
