@@ -194,7 +194,9 @@ def create_window(window):
         basket_ball.move()
         tennis_ball.move()
         new_window.update()
-        time.sleep(0.01)
+        # time.sleep(0.01)
+        sleep(0.01)
+
 
 
 """
