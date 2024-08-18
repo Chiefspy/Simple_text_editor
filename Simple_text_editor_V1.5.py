@@ -167,7 +167,7 @@ def create_window(window):
     notebook.pack(expand=True, fill="both")
 
     label1 = Label(tab1, text="Hello", bg="red", width=50, height=25, fg="white")
-    label1.pack()
+    label1.place(x=0, y=0)
     label1.bind("<Button-1>", kys)
     label1.bind("<B1-Motion>", help)
 
