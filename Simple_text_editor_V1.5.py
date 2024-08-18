@@ -183,6 +183,8 @@ def create_window(window):
     tennis_ball = Ball(canvas, 0, 0, 25, 3, 3, "green")
 
     while True:
+        if not new_window.winfo_exists():
+            break
         x_coordinates = label1.winfo_x()
         y_coordinates = label1.winfo_y()
         if x_coordinates >= WIDTH - 50 or x_coordinates < 0:
