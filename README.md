@@ -48,4 +48,7 @@ rm Simple_text_editor -r -force
 rmdir Simple_text_editor
 ```
 
+## updates
+### new_window doesn't throw an error anymore when closed
+
 
