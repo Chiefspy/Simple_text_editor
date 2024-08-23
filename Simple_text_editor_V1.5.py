@@ -330,13 +330,15 @@ def equals():
 def button_press(num):
     global equation_text
     global equation_label
+    
     equation_text = equation_text + str(num)
+    
     equation_label.set(equation_text)
 
     print(f"button pressed {num}, equation text {equation_text}")  # debug statement
 
-    equation_label = StringVar()
-    equation_label.set(equation_text)
+    # equation_label = StringVar()
+    # equation_label.set(equation_text)
 
 
 def new_file(window, text_area):
