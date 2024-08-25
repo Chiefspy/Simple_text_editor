@@ -255,6 +255,8 @@ def calculator_window():
 
     calculatorWindow.geometry("500x500")
 
+    calculatorWindow.resizable(False, False)
+
     equation_text = ""
     equation_label = StringVar()
     equation_label.set("")
