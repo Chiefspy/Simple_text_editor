@@ -319,7 +319,7 @@ def equals():
         total = str(eval(equation_text))
         equation_label.set(total)
         equation_text = total
-        print(total)
+        print(total) # debug print statement that makes sure the program calculates correctly
 
     except SyntaxError:
         equation_label.set("Syntax Error")
