@@ -324,10 +324,12 @@ def equals():
     except SyntaxError:
         equation_label.set("Syntax Error")
         equation_text = ""
+        print("Syntax Error")   # debug print statement that makes sure the program handles exceptions correctly
 
     except ZeroDivisionError:
         equation_label.set("ZeroDivisionError")
         equation_text = ""
+        print("ZeroDivisionError") # debug print statement that makes sure the program handles exceptions correctly
 
 
 def button_press(num):
