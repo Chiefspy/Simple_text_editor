@@ -339,6 +339,7 @@ def button_press(num):
     equation_text = equation_text + str(num)
     
     equation_label.set(equation_text)
+    equation_label.config(text=equation_text)
 
     print(f"button pressed {num}, equation text {equation_text}")  # debug statement
 
