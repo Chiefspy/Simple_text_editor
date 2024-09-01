@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import font, colorchooser, filedialog, messagebox, ttk
 import os
-import time
+# import time
 from Ball import *
 from time import *
 import smtplib
