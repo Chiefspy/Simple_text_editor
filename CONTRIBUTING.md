@@ -15,7 +15,7 @@ Thank you for considering contributing to [Simple_text_editor]! We're excited to
 
 ## Code of Conduct
 
-Please read and follow our [Code of Conduct](link-to-code-of-conduct.md).
+Please read and follow our [Code of Conduct](https://github.com/Chiefspy/Simple_text_editor/blob/main/CODE_OF_CONDUCT.md).
 
 ## How to Contribute
 
