@@ -1,6 +1,6 @@
 # Contributing to [Simple_text_editor]
 
-Thank you for considering contributing to [Your Project Name]! We're excited to collaborate with you.
+Thank you for considering contributing to [Simple_text_editor]! We're excited to collaborate with you.
 
 ## Getting Started
 
