@@ -68,4 +68,4 @@ Please read and follow our [Code of Conduct](link-to-code-of-conduct.md).
 - Ensure your contributions are well-documented.
 - Be respectful and constructive in code reviews and discussions.
 
-Thank you for contributing to [Your Project Name]!
+Thank you for contributing to [Simple_text_editor]!
