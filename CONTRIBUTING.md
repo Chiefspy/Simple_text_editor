@@ -7,7 +7,7 @@ Thank you for considering contributing to [Simple_text_editor]! We're excited to
 1. **Fork the repository** to your own GitHub account.
 2. **Clone the repository** to your local machine:
     ```bash
-    git clone https://github.com/your-username/your-project-name.git
+    git clone https://github.com/Chiefspy/Simple_text_editor.git
     ```
 3. **Set up your environment**:
     - Follow the installation instructions in the `README.md`.
