@@ -21,7 +21,7 @@ Please read and follow our [Code of Conduct](https://github.com/Chiefspy/Simple_
 
 ### Reporting Bugs
 
-1. Check the [issue tracker](link-to-issue-tracker) to see if the issue has already been reported.
+1. Check the [issue tracker](https://github.com/Chiefspy/Simple_text_editor/issues) to see if the issue has already been reported.
 2. If not, [open a new issue](https://github.com/Chiefspy/Simple_text_editor/issues/new/choose) and include:
     - A descriptive title.
     - Steps to reproduce the issue.
@@ -30,7 +30,7 @@ Please read and follow our [Code of Conduct](https://github.com/Chiefspy/Simple_
 
 ### Suggesting Features
 
-1. Check the [issue tracker](link-to-issue-tracker) to see if the feature has already been requested.
+1. Check the [issue tracker](https://github.com/Chiefspy/Simple_text_editor/issues) to see if the feature has already been requested.
 2. If not, [open a new feature request](link-to-new-feature-request) and include:
     - A descriptive title.
     - A detailed description of the feature.
