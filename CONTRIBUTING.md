@@ -31,7 +31,7 @@ Please read and follow our [Code of Conduct](https://github.com/Chiefspy/Simple_
 ### Suggesting Features
 
 1. Check the [issue tracker](https://github.com/Chiefspy/Simple_text_editor/issues) to see if the feature has already been requested.
-2. If not, [open a new feature request](link-to-new-feature-request) and include:
+2. If not, [open a new feature request](https://github.com/Chiefspy/Simple_text_editor/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=) and include:
     - A descriptive title.
     - A detailed description of the feature.
     - Any relevant examples or mockups.
