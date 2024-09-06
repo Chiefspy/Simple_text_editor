@@ -47,15 +47,16 @@ Please read and follow our [Code of Conduct](https://github.com/Chiefspy/Simple_
     - Code follows the project's coding style and guidelines.
     - Tests are added or updated to cover the changes.
 3. Commit your changes:
+   
     ```bash
     git commit -m "Brief description of your changes"
     ```
-4. Push the branch to your fork:
+5. Push the branch to your fork:
     ```bash
     git push origin your-feature-branch
     ```
-5. Open a pull request to the `main` or `master` branch of the original repository.
-6. Fill out the pull request template, if available, and link any related issues.
+6. Open a pull request to the `main` or `master` branch of the original repository.
+7. Fill out the pull request template, if available, and link any related issues.
 
 ## Reviewing Process
 
