@@ -420,7 +420,7 @@ def main():
     sendMailImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/Envelope-Download-PNG-Image.png")
     calculatorImage = PhotoImage(file=rf"{home_dir}/Simple_text_editor/Images/calculator.png")
 
-    menuBar = Menu(window, )
+    menuBar = Menu(window,bg='blue')
     window.config(menu=menuBar)
 
     fileMenu = Menu(menuBar, tearoff=0)
