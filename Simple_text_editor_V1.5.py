@@ -374,6 +374,8 @@ def main():
 
     window.title("Simple Text Editor")
 
+    window.configure(bg='lightblue')
+
     window_width = 500
     window_height = 500
     screen_width = window.winfo_screenwidth()
