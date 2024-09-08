@@ -374,7 +374,7 @@ def main():
 
     window.title("Simple Text Editor")
 
-    window.configure(bg='lightblue')
+    window.configure(bg='blue')
 
     window_width = 500
     window_height = 500
