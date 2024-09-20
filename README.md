@@ -16,6 +16,11 @@ Prgram now includes an exe file alternative that doesn't require terminal comman
 
 ## Terminal Commands
 
+### Create a directory for the repository 
+```bash
+mkdir [Your-directoy-name]
+```
+
 ### Clone the repo
 ```bash
 git clone https://github.com/Chiefspy/Simple_text_editor.git
