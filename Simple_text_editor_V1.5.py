@@ -5,6 +5,7 @@ import os
 from Ball import *
 from time import *
 import smtplib
+import socket
 
 
 def about():
